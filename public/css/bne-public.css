@@ -1,0 +1,232 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.jobs-bne {
+  background-color: #01579B;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 30px 15px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  width: 280px;
+}
+
+
+/* Formulário de Busca */
+.job-search-form {
+  position: relative;
+  display: block;
+  margin: 20px auto 0;
+  z-index: 30;
+  width: 90% !important;
+  max-width: 90% !important;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 4px 4px 20px -3px rgba(0, 0, 0, 0.1);
+}
+
+.job-search-form h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: bold;
+  color: #01579B;
+  margin: 0 0 20px;
+}
+
+.job-search-form .fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.job-search-form .fields .form-group {
+  padding: 5px;
+  width: calc(100%/3);
+  min-width: 225px;
+}
+
+.job-search-form .fields select,
+.job-search-form .fields input {
+  font-size: .8em;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: none;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  color: #333;
+}
+
+.job-search-form .fields input {
+  width: 100%;
+}
+
+.job-search-form .fields select {
+  width: 100%;
+}
+
+.job-search-form .footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 1em 5px 0;
+}
+
+.job-search-form .footer input {
+  font-size: .7em;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #01579B;
+  transition: all 0.5s;
+  border: 0;
+  color: #fff;
+}
+
+.job-search-form .footer input:hover {
+  text-decoration: none;
+  background-color: #014a81;
+  transition: all 0.5s;
+}
+
+/* Fim Formulário de Busca */
+
+
+.jobs {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: -10px;
+  width: 90% !important;
+  max-width: 90% !important;
+  padding: 20px 10px;
+  background-color: #f9f9f9;
+}
+
+.jobs .content-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.job {
+  width: calc(33% - 10px);
+  min-width: 280px;
+  margin: 10px 5px;
+  padding: 20px;
+
+  border: 1px solid #e6e6e6;
+  border-top: solid 3px #01579B;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+  border-radius: 4px;
+}
+
+.job h2.job-title {
+  min-height: 35px;
+  margin: 0;
+  font-size: .9em;
+  font-weight: bold;
+  color: #01579B;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.job h3.job-location {
+  margin: 10px 0;
+  font-size: .7em;
+  font-weight: normal;
+  font-style: italic;
+  color: #666;
+}
+
+.job p.job-description {
+  font-size: .8em;
+  color: #444;
+  min-height: 100px;
+}
+
+.job .job-links {
+  padding-bottom: 0.75em;
+  text-align: right;
+}
+
+.job .job-links a {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0.5em;
+  text-decoration: none;
+  color: #000;
+}
+
+.job .btn-details {
+  text-decoration: none;
+  background-color: #FFCA28;
+  color: #444;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+
+
+/* Paginação */
+.jobs .pagination {
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+
+.jobs .pagination a,
+.jobs .pagination span.current {
+  display: block;
+  width: auto;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  font-size: .9em;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.jobs .pagination a {
+  background-color: #c2c2c2;
+  color: #fff;
+}
+
+.jobs .pagination a:hover {
+  background-color: #01579B;
+}
+
+.jobs .pagination span.current {
+  background-color: #01579B;
+  color: #fff;
+}
+
+/* Rack */
+article.page {
+  padding: 0 !important;
+}
+
+@media (max-width: 544px) {
+  .job-search-form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .jobs {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
